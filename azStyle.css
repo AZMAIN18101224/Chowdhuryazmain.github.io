@@ -546,6 +546,57 @@ section{
     transform: scale(1);
 }
 
+/* find me starts */
+.find-me{
+    text-align: center;
+}
+.find-me h4{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    -webkit-text-stroke: 1px rgba(218, 165, 32, 0.075);
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.find-me h4::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    color: goldenrod;
+    -webkit-text-stroke: 0px rgba(252, 252, 252, 0.658);
+    border-right: 2px transparent goldenrod;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+.find-me h4:hover{
+    color:white;
+}
+
+@keyframes animate{
+
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 165px;
+    }
+}
+
+.find-me .social-icons{
+    text-align: center;
+    font-size: 40px;
+}
+.find-me .icon{
+    color: white;
+}
+.find-me .icon:hover{
+    transform: scale(1.2);
+    color: rgb(187, 32, 218);
+}
+
+
 .copyright{   
     padding: 8px;
     background: #bd930809;
