@@ -315,6 +315,65 @@ section{
     transform: scale(1.1);
 }
 
+.experience .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    color:white;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+
+.experience .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    color:white;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+
+.experience .box{
+    background:#27272765;
+    padding: 40px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .40s;
+}
+
+.experience .box h6{
+    color: rgba(220, 220, 220, 0.548);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience .box h4{
+    color:var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.experience .box p{
+    color:whitesmoke;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.experience .box h5{
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.experience .box:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 25px 0px  rgba(218, 165, 32, 0.555);
+    background-color: rgba(218, 165, 32, 0.178);
+}
 
 .education .content {
     display: grid;
